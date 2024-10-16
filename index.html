@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Urna Digital - Eleição de Líder de Turma</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Eleição de Líder de Turma</h1>
+
+        <div id="display">
+            <p>Digite o número do candidato:</p>
+            <input type="text" id="numDisplay" maxlength="2" readonly>
+        </div>
+
+        <div class="keypad">
+            <button onclick="digitarNumero(1)">1</button>
+            <button onclick="digitarNumero(2)">2</button>
+            <button onclick="digitarNumero(3)">3</button>
+            <button onclick="digitarNumero(4)">4</button>
+            <button onclick="digitarNumero(5)">5</button>
+            <button onclick="digitarNumero(6)">6</button>
+            <button onclick="digitarNumero(7)">7</button>
+            <button onclick="digitarNumero(8)">8</button>
+            <button onclick="digitarNumero(9)">9</button>
+            <button id="brancoButton" onclick="votoBranco()">Branco</button>
+            <button onclick="digitarNumero(0)">0</button>
+            <button id="apagarButton" onclick="apagarNumero()">Apagar</button>
+        </div>
+
+        <div class="action-buttons">
+            <button id="confirmButton" class="confirm-button" onclick="confirmarVoto()">Confirmar</button>
+        </div>
+
+        <div id="resultado">
+            <h2>Resultados:</h2>
+            <div class="bar-container">
+                <div class="bar" id="bar1">Ycaro e Gabriel: 0 votos</div>
+            </div>
+            <div class="bar-container">
+                <div class="bar" id="bar2">Heloísa e Paula: 0 votos</div>
+            </div>
+            <div class="bar-container">
+                <div class="bar" id="barBranco">Votos em Branco: 0 votos</div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+/* style.css */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f8;
+    margin: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #333;
+}
+
+#display {
+    margin-bottom: 20px;
+}
+
+#numDisplay {
+    font-size: 24px;
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+}
+
+.keypad {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.keypad button {
+    padding: 15px;
+    font-size: 18px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#brancoButton {
+    background-color: #FFFFFF;
+    color: black;
+    border: 1px solid #ccc;
+}
+
+#apagarButton {
+    background-color: #F89951;
+}
+
+.confirm-button {
+    background-color: #42C074;
+}
+
+.keypad button:hover {
+    background-color: #0056b3;
+}
+
+#brancoButton:hover {
+    background-color: #f0f0f0;
+}
+
+#apagarButton:hover {
+    background-color: #e68026;
+}
+
+.confirm-button:hover {
+    background-color: #36a061;
+}
+
+.action-buttons {
+    margin-top: 20px;
+}
+
+.confirm-button {
+    padding: 12px 24px;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#resultado {
+    margin-top: 30px;
+}
+
+.bar-container {
+    width: 100%;
+    background-color: #e9ecef;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+.bar {
+    background-color: #28a745;
+    color: white;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: left;
+    padding-left: 15px;
+    transition: width 0.4s ease;
+    max-width: 100%;
+}
+
+.bar#bar1 {
+    background-color: #007bff;
+}
+
+.bar#bar2 {
+    background-color: #ff5733;
+}
+
+.bar#barBranco {
+    background-color: #6c757d;
+}
+
+/* Responsividade */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    .keypad button {
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    #numDisplay {
+        font-size: 20px;
+        padding: 8px;
+    }
+
+    .confirm-button {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
