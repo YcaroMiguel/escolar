@@ -9,7 +9,7 @@ let votos = {
 
 // Associa números aos candidatos
 let candidatos = {
-    "22": "Ycaro e Gabriel",
+    "10": "Ycaro e Gabriel",
     "11": "Heloísa e Paula"
 };
 
